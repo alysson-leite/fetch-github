@@ -215,7 +215,7 @@ main {
   }
 
   .container .profile-data .repositories .repo-list {
-    width: 100%;
+    width: 110%;
     justify-content: center;
   }
 }
