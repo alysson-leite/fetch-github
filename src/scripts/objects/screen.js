@@ -15,12 +15,14 @@ const screen = {
                     </div>`;
 
         let repositoriesItens = '';
-        user.repositories.forEach(repo => repositoriesItens += `<li class="repo-list">
+        user.repositories.forEach(repo => repositoriesItens += `<li class="repositories">
                                                                     <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                                                                    <span class="repo">🍴 ${repo.forks_count}</span>
-                                                                    <span class="repo">⭐ ${repo.stargazers_count}</span>
-                                                                    <span class="repo">👀 ${repo.watchers_count}</span>
-                                                                    <span class="repo">💻 ${repo.language}</span>
+                                                                    <div class="repo-list">
+                                                                        <span class="repo">🍴 ${repo.forks_count}</span>
+                                                                        <span class="repo">⭐ ${repo.stargazers_count}</span>
+                                                                        <span class="repo">👀 ${repo.watchers_count}</span>
+                                                                        <span class="repo">💻 ${repo.language}</span>
+                                                                    </div>
                                                                 </li>`)
 
         if(user.repositories.length > 0){
